@@ -3,6 +3,7 @@ ifeq ($(USE_SAPI),y)
 SAPI_BASE=libs/sapi/sapi_v0.5.2
 
 DEFINES+=USE_SAPI
+DEFINES+=SAPI_USE_INTERRUPTS
 
 INCLUDES += -I$(SAPI_BASE)/base/inc
 INCLUDES += -I$(SAPI_BASE)/soc/core/inc
